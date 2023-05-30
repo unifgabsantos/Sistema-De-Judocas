@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
  * @author gabri
  */
 public class AlunoTest {
+    public AlunoTest(){};
     /*
      * Teste de criação do Aluno
     	Long id;
@@ -40,4 +41,5 @@ public class AlunoTest {
         assertEquals(a.getFiliado().getCpf(),null);
         assertEquals(a.getFiliado().getObservacoes(),null);
     }
+
 }
