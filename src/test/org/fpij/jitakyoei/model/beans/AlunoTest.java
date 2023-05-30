@@ -41,5 +41,28 @@ public class AlunoTest {
         assertEquals(a.getFiliado().getCpf(),null);
         assertEquals(a.getFiliado().getObservacoes(),null);
     }
-
+  @Test
+    public void StringAluno(){
+        Aluno a = new Aluno();
+        Filiado f = new Filiado();
+        a.setFiliado(f);
+       
+        a.getFiliado().setNome("Example 123");
+        assertEquals(a.getFiliado().getNome(),"Example 123");
+        
+        a.getFiliado().setRegistroCbj("Example");
+        assertEquals(a.getFiliado().getRegistroCbj(),"Example");
+        
+        a.getFiliado().setTelefone1("12345");
+        assertEquals(a.getFiliado().getTelefone1(),"12345");
+        
+        a.getFiliado().setTelefone2("6789");
+        assertEquals(a.getFiliado().getTelefone2(),"6789");
+         
+        a.getFiliado().setEmail("guilherme@example.com");
+        assertEquals(a.getFiliado().getEmail(),"guilherme@example.com");
+        
+        a.getFiliado().setObservacoes("Aaaa");
+        assertEquals(a.getFiliado().getObservacoes(),"Aaaa");
+    }
 }
